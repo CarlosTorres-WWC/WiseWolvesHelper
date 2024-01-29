@@ -13,6 +13,12 @@ Lightweight trigger framework that helps organize Apex triggers and Improves Cod
 
 [ServiceAppoinmentTriggerHelper](https://github.com/CarlosTorres-WWC/WiseWolvesHelper/blob/main/WiseWolvesHelper/force-app/main/default/classes/ServiceAppointmentTriggerHelper.cls)
 
+
+## Error Log Helper Class
+this class provides you methods to log the exceptions on a custom object where we can track them with details and link the log to a record, validate DML Operations to log the failed records.
+
+[ErrorHelper](https://github.com/CarlosTorres-WWC/WiseWolvesHelper/blob/main/WiseWolvesHelper/force-app/main/default/classes/ErrorHelper.cls)
+
 ## Get QueueMembers userIds
 Invocable method that can be deployed to a salesforce organization and implemented on an screen flow where we need to query for the queue members to use them in order to send emails/notification from the Screen Flow.
 
