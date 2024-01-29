@@ -29,7 +29,7 @@ Invocable method that can be deployed to allow the users to send an email with m
 ## Apex Object Cloner
 Helper class that allows to map objects that need to be synced on fields with the same data type and name, this can be linked by a lookup field and implemented on an apex trigger or as an invocable method.
 
-[ObjectClonerHelper](https://github.com/CarlosTorres-WWC/WiseWolvesHelper/blob/main/WiseWolvesHelper/force-app/main/default/classes/ObjectClonerHelper.cls)
+[ObjectClonerHelper](https://github.com/CarlosTorres-WWC/WiseWolvesHelper/blob/main/WiseWolvesHelper/force-app/main/default/classes/DocusignHelper.cls)
 
 
 ## Docusign Helper Send an envelope By Apex Toolkit
