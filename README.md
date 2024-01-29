@@ -1,6 +1,5 @@
 
- <img width="1000px" alt="Wisewolves" src="https://github.com/CarlosTorres-WWC/WiseWolvesHelper/assets/78768243/05d9f923-a772-4aa1-ba80-a86faf60aef0">
-
+ <img width="100%" alt="Wisewolves" src="https://github.com/CarlosTorres-WWC/WiseWolvesHelper/assets/78768243/05d9f923-a772-4aa1-ba80-a86faf60aef0">
 
 
 # Wise Wolves Helper Repository
