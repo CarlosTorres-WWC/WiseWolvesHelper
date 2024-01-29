@@ -4,6 +4,15 @@
 
 # Wise Wolves Helper Repository
 
+## Trigger Framework
+Lightweight trigger framework that helps organize Apex triggers in Salesforce and separates the logic of the Apex trigger into helper classes for easier maintenance and controlled changes in an orderly manner
+
+[TriggerHelper](https://github.com/CarlosTorres-WWC/WiseWolvesHelper/blob/main/WiseWolvesHelper/force-app/main/default/classes/TriggerHelper.cls)
+
+[ServiceAppointmentTrigger](https://github.com/CarlosTorres-WWC/WiseWolvesHelper/blob/main/WiseWolvesHelper/force-app/main/default/triggers/ServiceAppointmentTrigger.trigger)
+
+[ServiceAppoinmentTriggerHelper](https://github.com/CarlosTorres-WWC/WiseWolvesHelper/blob/main/WiseWolvesHelper/force-app/main/default/classes/ServiceAppointmentTriggerHelper.cls)
+
 ## Get QueueMembers userIds
 Invocable method that can be deployed to a salesforce organization and implemented on an screen flow where we need to query for the queue members to use them in order to send emails/notification from the Screen Flow.
 
