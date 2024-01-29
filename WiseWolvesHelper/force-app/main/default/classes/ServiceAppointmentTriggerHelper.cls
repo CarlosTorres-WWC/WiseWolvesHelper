@@ -22,7 +22,7 @@ public WITHOUT SHARING class ServiceAppointmentTriggerHelper extends TriggerHelp
                 }
             }
         }catch(Exception ex){
-            ErrorHelper.logException('Serive Appointment', '', 'Appointment - processBeforeUpdate', String.valueOf(Trigger.New) , ex.getMessage());
+            ErrorHelper.logSingleException('Serive Appointment', '', 'Appointment - processBeforeUpdate', String.valueOf(Trigger.New) , ex.getMessage());
             ErrorHelper.throwException('Appointment - processBeforeUpdate', ex.getMessage() + ':' + ex.getLineNumber());
         }
     }

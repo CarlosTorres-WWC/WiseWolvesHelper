@@ -1,10 +1,13 @@
-/*
- * @author: Carlos Torres.
- * @description:
- */
+/**
+ * @className: ServiceAppointmentTriggerHelper.
+ * @testClass: ServiceAppointmentsTestClass.
+ * @description: Trigger that calculates the start and end date time on the patient's timezone.
+ * @author: Carlos Torres @wisewolves.
+ * @date: Nov/15/2023.
+*/
 public class ErrorHelper{
 
-    public static void logException(String objectName,String recordId,String processName,String exceptionDetail,String exceptionMessage){
+    public static void logSingleException(String objectName,String recordId,String processName,String exceptionDetail,String exceptionMessage){
         Error_Log__c error = new Error_Log__c();
         error.Object__c = objectName;
         error.RecordId__c = recordId;
@@ -14,8 +17,22 @@ public class ErrorHelper{
         INSERT error;
     }
 
-    public static void throwException(String processName,String message){
-        throw new Exception('Exception happend during ' + processName + ',' + message);
+    public static Error_Log__c logException(String objectName,String recordId,String processName,String exceptionDetail,String exceptionMessage){
+        Error_Log__c error = new Error_Log__c();
+        error.Object__c = objectName;
+        error.RecordId__c = recordId;
+        error.Operation__c = processName;
+        error.Exception_Detail__c = exceptionDetail;
+        error.Exception_Message__c = exceptionMessage;
+        return error;
+    }
+
+    public static SObject logExceptionOnRecord(String recordId,String objectName,String fieldApiName,String log){
+        Schema.SObjectType objectType = Schema.getGlobalDescribe().get(objectName);
+        SObject record = objectType.newSObject();
+        record.put('Id', recordId);
+        record.put(fieldApiName, log);
+        return record;
     }
 
     public static void logDmlExceptions(String objname, String processname, List<Database.SaveResult> listSaveResult){
@@ -39,5 +56,9 @@ public class ErrorHelper{
         if(exclist.size()>0){
             INSERT exclist;
         }
+    }
+
+    public static void throwException(String processName,String message){
+        throw new Exception('Exception happend during ' + processName + ',' + message);
     }
 }
