@@ -5,8 +5,6 @@
 # Wise Wolves Helper Repository
 
 ## Get QueueMembers userIds
-### Description: 
-
 Invocable method that can be deployed to a salesforce organization and implemented on an screen flow where we need to query for the queue members to use them in order to send emails/notification from the Screen Flow.
 ### Classes:
 [QueueMemberHelper](https://github.com/CarlosTorres-WWC/WiseWolvesHelper/blob/main/WiseWolvesHelper/force-app/main/default/classes/QueueMemberHelper.cls)
