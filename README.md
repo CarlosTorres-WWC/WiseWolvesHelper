@@ -32,3 +32,9 @@ Helper class that allows to map objects that need to be synced on fields with th
 [ObjectClonerHelper](https://github.com/CarlosTorres-WWC/WiseWolvesHelper/blob/main/WiseWolvesHelper/force-app/main/default/classes/ObjectClonerHelper.cls)
 
 
+## Docusign Helper Send an envelope By Apex Toolkit
+Helper class to send an evenlope with documents and recipients, this method allows to query documents from different records and send them together on the same envelope.
+
+[Docusign Helper](https://github.com/CarlosTorres-WWC/WiseWolvesHelper/blob/main/WiseWolvesHelper/force-app/main/default/classes/ObjectClonerHelper.cls)
+
+
