@@ -7,9 +7,9 @@
 */
 public WITHOUT SHARING class ServiceAppointmentTriggerHelper extends TriggerHelper{
     /**
-     * @description: handles the trigger context for the process before update
-			here is where we add the filter to select the records will be working with.
-	   * @params: Trigger Context.
+    * @description: handles the trigger context for the process before update
+	    here is where we add the filter to select the records will be working with.
+	* @params: Trigger Context.
     */
     public override void processBeforeUpdate(){
         FOR(ServiceAppointment SA : (List<ServiceAppointment>)Trigger.New){
