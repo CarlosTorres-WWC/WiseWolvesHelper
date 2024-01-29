@@ -1,5 +1,5 @@
-# Wise Wolves Helper Repository. - 
 ![Banner](https://github.com/CarlosTorres-WWC/WiseWolvesHelper/assets/78768243/05d9f923-a772-4aa1-ba80-a86faf60aef0)
+# Wise Wolves Helper Repository
 
 website
 https://wisewolves.com/
