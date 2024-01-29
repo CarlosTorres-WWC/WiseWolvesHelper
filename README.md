@@ -5,7 +5,11 @@
 # Wise Wolves Helper Repository
 
 ## Trigger Framework
-Lightweight trigger framework that helps organize Apex triggers in Salesforce and separates the logic of the Apex trigger into helper classes for easier maintenance and controlled changes in an orderly manner
+Lightweight trigger framework that helps organize Apex triggers in Salesforce and separates the logic of the Apex trigger into helper classes for easier maintenance and controlled changes in an orderly manner.
+* Enhanced Code Organization
+* Improved Code Reusability
+* Easier Testing and Debugging
+* Scalability
 
 [TriggerHelper](https://github.com/CarlosTorres-WWC/WiseWolvesHelper/blob/main/WiseWolvesHelper/force-app/main/default/classes/TriggerHelper.cls)
 
