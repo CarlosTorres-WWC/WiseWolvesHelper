@@ -15,7 +15,7 @@ Lightweight trigger framework that helps organize Apex triggers and Improves Cod
 
 
 ## Error Log Helper Class
-this class provides you methods to log the exceptions on a custom object where we can track them with details and link the log to a record, validate DML Operations to log the failed records.
+This class provides you methods to log the exceptions on a custom object where we can track them with details and link the log to a record, validate DML Operations to log the failed records.
 
 [ErrorHelper](https://github.com/CarlosTorres-WWC/WiseWolvesHelper/blob/main/WiseWolvesHelper/force-app/main/default/classes/ErrorHelper.cls)
 
