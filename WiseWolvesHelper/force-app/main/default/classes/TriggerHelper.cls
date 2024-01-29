@@ -14,7 +14,7 @@ public virtual class TriggerHelper{
             }
         }
     }
-	public virtual void processBeforeUpdate(){}
+    public virtual void processBeforeUpdate(){}
     public virtual void processBeforeInsert(){}
     public virtual void processAfterUpdate(){}
     public virtual void processAfterInsert(){}
