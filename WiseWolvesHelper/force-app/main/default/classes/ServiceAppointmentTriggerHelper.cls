@@ -12,13 +12,18 @@ public WITHOUT SHARING class ServiceAppointmentTriggerHelper extends TriggerHelp
 	* @params: Trigger Context.
     */
     public override void processBeforeUpdate(){
-        FOR(ServiceAppointment SA : (List<ServiceAppointment>)Trigger.New){
-            ServiceAppointment oldSA = (ServiceAppointment)Trigger.oldMap.get(SA.id);
-        	IF(!String.isEmpty(SA.Time_Zone__c) && SA.SchedStartTime != null && SA.SchedEndTime != null && 
-               ((SA.SchedStartTime != oldSA.SchedStartTime) || (SA.SchedEndTime != oldSA.SchedEndTime))){
-				SA.Start_DateTime__c = calculcateDateTime(SA.SchedStartTime,SA.Time_Zone__c);
-                SA.End_DateTime__c = calculcateDateTime(SA.SchedEndTime,SA.Time_Zone__c);
+        try{
+            for(ServiceAppointment SA : (List<ServiceAppointment>)Trigger.New){
+                ServiceAppointment oldSA = (ServiceAppointment)Trigger.oldMap.get(SA.id);
+                if(!String.isEmpty(SA.Time_Zone__c) && SA.SchedStartTime != null && SA.SchedEndTime != null && 
+                   ((SA.SchedStartTime != oldSA.SchedStartTime) || (SA.SchedEndTime != oldSA.SchedEndTime))){
+                    SA.Start_DateTime__c = calculcateDateTime(SA.SchedStartTime,SA.Time_Zone__c);
+                    SA.End_DateTime__c = calculcateDateTime(SA.SchedEndTime,SA.Time_Zone__c);
+                }
             }
+        }catch(Exception ex){
+            ErrorHelper.logException('Serive Appointment', '', 'Appointment - processBeforeUpdate', String.valueOf(Trigger.New) , ex.getMessage());
+            ErrorHelper.throwException('Appointment - processBeforeUpdate', ex.getMessage() + ':' + ex.getLineNumber());
         }
     }
 
