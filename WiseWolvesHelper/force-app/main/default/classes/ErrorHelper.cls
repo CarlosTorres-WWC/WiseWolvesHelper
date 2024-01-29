@@ -1,7 +1,7 @@
 /**
- * @className: ServiceAppointmentTriggerHelper.
- * @testClass: ServiceAppointmentsTestClass.
- * @description: Trigger that calculates the start and end date time on the patient's timezone.
+ * @className: ErrorHelper.
+ * @testClass: ErrorHelperTest.
+ * @description:.
  * @author: Carlos Torres @wisewolves.
  * @date: Nov/15/2023.
 */
