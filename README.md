@@ -21,7 +21,7 @@ Invocable method that can be deployed to allow the users to send an email with m
 [EmailHelper](https://github.com/CarlosTorres-WWC/WiseWolvesHelper/blob/main/WiseWolvesHelper/force-app/main/default/classes/EmailHelper.cls)
 
 
-## Object Cloner
+## Apex Object Cloner
 ### Description:
 
 Helper class that allows to map objects that need to be synced on fields with the same data type and name, this can be linked by a lookup field and implemented on an apex trigger or as an invocable method.
