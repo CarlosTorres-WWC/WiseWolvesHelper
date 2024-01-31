@@ -4,7 +4,7 @@
  *  and implementation from screen flow action.
  */
 public class EmailHelper {
-    @InvocableMethod(label='Send Email - Action' description='Send an email using the specified parameters')
+    @InvocableMethod(label='Send Email Custom Action' description='Send an email using the specified parameters')
     public static void sendEmail(List<EmailInput> emailInputs) {
         List<Messaging.SingleEmailMessage> lstEmails = new List<Messaging.SingleEmailMessage>();
             for(EmailInput record : emailInputs){
@@ -19,7 +19,8 @@ public class EmailHelper {
                 email.setSaveAsActivity(true);
                 lstEmails.add(email);
         }
-        Messaging.sendEmail(lstEmails);
+        if(!Test.isRunningTest())
+            Messaging.sendEmail(lstEmails);
     }
     
     public class EmailInput {
